@@ -20,7 +20,7 @@ body {
   align-items: center;
   padding: 12px 24px;
   background: var(--primary);
-  color: white;
+  color: rgb(61, 69, 102);
   gap: 12px;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .btn {
-  background: white;
+  background: rgb(230, 227, 54);
   color: var(--primary);
   border: none;
   padding: 8px 12px;
