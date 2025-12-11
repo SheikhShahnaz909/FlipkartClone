@@ -1,22 +1,19 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from "./Header";
-import Home from "./Home";
-import Products from "./Products";
-import ProductDetails from "./ProductDetails";
-import Cart from "./Cart";
-import Login from "./Login";
-import Register from "./Register";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 export default function App() {
   return (
     <BrowserRouter>
-
-      {/* Header/NAVBAR */}
       <Header />
-
-      <div style={{ padding: 24 }}>
+      <main style={{ padding: 24 }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
@@ -25,8 +22,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-      </div>
-
+      </main>
     </BrowserRouter>
   );
 }
